@@ -8,5 +8,8 @@ cd python/
 pip install dephell[full]
 dephell deps convert --from=setup.py --to=pyproject.toml
 ```
-- Because poetry doesn't support installing from a Git repo's subdirs, we had to copy-paste `triton/python` into this new repo.
-- Then you install like this: `poetry add triton-pre-mlir@git+https://github.com/richgong/triton.git`
+- Because poetry doesn't support installing from a Git repo's subdirs, we had to copy `triton/python` into the root.
+```
+copy python/* .
+```
+- Then you install like this: `poetry add triton-pre-mlir@git+https://github.com/richgong/triton.git@triton_pre_mlir_poetry`
