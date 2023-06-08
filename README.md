@@ -1,3 +1,13 @@
+What I'm doing to convert into Poetry-compatible project:
+
+```
+cd python/
+pip install dephell[full]
+dephell deps convert --from=setup.py --to=pyproject.toml
+```
+
+# Original README
+
 <div align="center">
   <img src="https://cdn.openai.com/triton/assets/triton-logo.png" alt="Triton logo" width="88" height="100">
 </div>

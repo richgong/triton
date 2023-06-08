@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "triton_pre_mlir"
+version = "2.0.0"
+description = "A language and compiler for custom Deep Learning operations"
+keywords = ["Compiler", "Deep", "Learning"]
+classifiers = ["Development Status :: 4 - Beta", "Intended Audience :: Developers", "Topic :: Software Development :: Build Tools", "License :: OSI Approved :: MIT License", "Programming Language :: Python :: 3.6"]
+homepage = "https://github.com/openai/triton/"
+authors = ["Philippe Tillet <phil@openai.com>"]
+
+[tool.poetry.dependencies]
+python = "*"
+autopep8 = {optional = true, version = "*"}
+cmake = "*"
+filelock = "*"
+flake8 = {optional = true, version = "*"}
+isort = {optional = true, version = "*"}
+matplotlib = {optional = true, version = "*"}
+numpy = {optional = true, version = "*"}
+pandas = {optional = true, version = "*"}
+pytest = {optional = true, version = "*"}
+scipy = {version = ">=1.7.1", optional = true}
+tabulate = {optional = true, version = "*"}
+torch = "*"
+
+[tool.poetry.extras]
+tests = ["autopep8", "flake8", "isort", "numpy", "pytest", "scipy"]
+tutorials = ["matplotlib", "pandas", "tabulate"]
